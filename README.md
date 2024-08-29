@@ -14,4 +14,4 @@
 
 - 2024.08.27 [쿨래스 활용, private 변수, 상속](./TIL/Python/2024_08_27_Python06.md)
   
-- 2024.08.27 [pandas, numpy, 응용 프로젝트](./TIL/Python/2024_08_28_Python07.md)
+- 2024.08.28 [pandas, numpy, 응용 프로젝트](./TIL/Python/2024_08_28_Python07.md)
