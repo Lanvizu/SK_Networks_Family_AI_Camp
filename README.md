@@ -15,3 +15,5 @@
 - 2024.08.27 [클래스 활용, private 변수, 상속](./TIL/Python/2024_08_27_Python06.md)
   
 - 2024.08.28 [pandas, numpy, 응용 프로젝트](./TIL/Python/2024_08_28_Python07.md)
+  
+- 2024.08.29 [데이터베이스 개요](./TIL/Database/2024_08_29_Database.md)
