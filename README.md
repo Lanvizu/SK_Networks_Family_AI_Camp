@@ -2,6 +2,10 @@
 
 ## Python
 
+<details>
+  
+<summary>2024-08-20 ~ 2024-08-28</summary>
+ 
 - 2024.08.20 [자료형, 변수, 입력](./TIL/Python/2024_08_20_Python01.md)
 
 - 2024.08.21 [조건문, 반복문, 딕셔너리](./TIL/Python/2024_08_21_Python02.md)
@@ -16,6 +20,8 @@
   
 - 2024.08.28 [pandas, numpy, 응용 프로젝트](./TIL/Python/2024_08_28_Python07.md)
   
+</details>
+
 ## Database
   
 - 2024.08.29 [데이터베이스 개요](./TIL/Database/2024_08_29_Database.md)
