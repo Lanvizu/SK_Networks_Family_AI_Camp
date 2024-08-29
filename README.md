@@ -13,3 +13,5 @@
 - 2024.08.26 [모듈, 외부 모듈, 클래스](./TIL/Python/2024_08_26_Python05.md)
 
 - 2024.08.27 [쿨래스 활용, private 변수, 상속](./TIL/Python/2024_08_27_Python06.md)
+  
+- 2024.08.27 [pandas, numpy, 응용 프로젝트](./TIL/Python/2024_08_28_Python07.md)
