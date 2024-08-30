@@ -28,4 +28,12 @@
 
 - 2024.08.30 [SQL 기본, 문법](./TIL/Database/2024_08_30_Database02.md)
 
-## [회고록](https://blog.naver.com/ghzm888)
+## 회고록
+
+<details>
+  
+<summary>네이버 블로그</summary>
+
+  [회고록](https://blog.naver.com/ghzm888)
+
+</details>
