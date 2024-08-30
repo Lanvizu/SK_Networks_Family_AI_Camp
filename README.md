@@ -30,10 +30,5 @@
 
 ## 회고록
 
-<details>
-  
-<summary>네이버 블로그</summary>
+  [네이버 블로그](https://blog.naver.com/ghzm888)
 
-  [회고록](https://blog.naver.com/ghzm888)
-
-</details>
