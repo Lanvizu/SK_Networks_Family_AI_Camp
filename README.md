@@ -31,6 +31,8 @@
 - 2024.08.29 [데이터베이스 개요](./TIL/Database/2024_08_29_Database01.md)
 
 - 2024.08.30 [SQL 기본, 문법](./TIL/Database/2024_08_30_Database02.md)
+  
+- 2024.09.02 [SQL 고급 문법(데이터 형식, 조인)](./TIL/Database/2024_09_02_Database03.md)
 
 </details>
 
