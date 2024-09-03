@@ -371,3 +371,57 @@ df.head()
 ![image](https://github.com/user-attachments/assets/a8b70954-31dd-46b1-a608-609eb98d760e)
 
 성공적으로 크롤링.
+
+----
+
+## 웹 크롤링 추가 연습
+
+### 잡코리아 FAQ 웹 크롤링
+
+```python
+import pandas as pd
+import os
+import sys
+import urllib.request
+import json
+from bs4 import BeautifulSoup  # pip install bs4
+import xml.etree.ElementTree as ET
+
+result = []
+for i in range(1,6):
+    pagenum = i
+    url = f'https://www.jobkorea.co.kr/help/faq/user?tab={pagenum}'
+    html = urllib.request.urlopen(url)
+    soup = BeautifulSoup(html,'html.parser')
+    li_lists = soup.select('#content > div > div.faqWrap > div.tabSearchList > ul > li')
+    
+    for data in li_lists:
+        data = data.select('span.tabSearchListTitleWrap')[0].text.split(']')
+        data[0] = data[0].lstrip('[')
+        result.append(data)
+
+result
+```
+
+### 사람인 FAQ 웹 크롤링
+
+```python
+# https://www.saramin.co.kr/zf_user/help/help-word/main?memberCode=per
+
+result = []
+for i in range(1,10):
+    pagenum = i
+    url = f'https://www.saramin.co.kr/zf_user/help/help-word/main?memberCode=per&inquiryCode={pagenum}'
+    html = urllib.request.urlopen(url)
+    soup = BeautifulSoup(html,'html.parser')
+    li_lists = soup.select('#content > div.wrap_help > div.wrap_list_help > ul > li')
+
+#content > div.wrap_help > div.wrap_list_help > ul > li:nth-child(1) > dl > dt > button > span
+    
+    for data in li_lists:
+        question = data.find('span', class_='question').text.strip()
+        result.append(question)
+
+result
+
+```
