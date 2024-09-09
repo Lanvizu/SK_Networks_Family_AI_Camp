@@ -60,6 +60,17 @@
 
 </details>
 
+## 데이터_분석
+
+<details>
+  
+<summary>2024-09-09 ~ 2024-09-12</summary>
+  
+- 2024.09.09 [](./TIL/데이터_분석/2024_09_09_데이터_분석01.md)
+
+
+</details>
+
 ## 회고록
 
   [네이버 블로그](https://blog.naver.com/ghzm888)
