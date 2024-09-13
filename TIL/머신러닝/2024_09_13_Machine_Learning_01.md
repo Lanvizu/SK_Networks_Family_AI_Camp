@@ -544,3 +544,74 @@ print('중복 제거 이후: ', df.shape)
   - 사이킷런에서는 0~1 사이의 값으로 출력
 
   - 정확도 = (정확히 맞힌 개수) / (전체 데이터 개수)
+
+
+  ----
+
+  # 학습 코드 정리
+
+동일한 의미를 가진 데이터, 학습에 의미없는 데이터 처리
+
+```python
+import seaborn as sns
+from sklearn.preprocessing import LabelEncoder, PolynomialFeatures
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+df = sns.load_dataset('titanic')
+X = df.drop(columns = ['who','alive','embark_town','fare','adult_male','deck','survived', 'class'])
+y = df['survived']
+X.head()
+```
+
+```python
+X.isnull().sum()
+# age를 각각의 Pclass별 평균 나이로 넣기
+X['age'].fillna(X.groupby('pclass')['age'].transform('mean'), inplace=True)
+X.isnull().sum()
+```
+
+```python
+# embarked는 가장 최빈 값으로 채워넣기
+X['embarked'].fillna(X['embarked'].mode()[0], inplace=True)
+X.isnull().sum()
+```
+
+```python
+# 이상치 체크
+for col in X.columns:
+
+    print(f"{col} : {X[col].unique()}")
+    
+# age값에 float 형태 체크 후 변환
+X['age'] = X['age'].astype('int') 
+
+
+for col in X.columns:
+
+   print(f"{col} : {X[col].unique()}")
+```
+```python
+# 남녀에 대한 데이터로 학습
+# 라벨링 작업
+# 범주형 데이터(예: 성별, 지역 등)를 숫자로 변환합니다.
+label = LabelEncoder()
+for col in X.select_dtypes(include='object').columns:
+    X[col] = label.fit_transform(X[col])
+
+X.head()
+```
+```python
+# 스케일 맞춤 작업
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+X_scaled
+```
+
+```python
+X_train,X_test,y_train,y_test = train_test_split(X_scaled,y,test_size=0.2, random_state=42)
+model = LinearRegression()
+model.fit(X_train,y_train)
+model.score(X_test,y_test)
+```
