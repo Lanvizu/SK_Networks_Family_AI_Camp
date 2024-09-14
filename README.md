@@ -76,6 +76,14 @@
 
 </details>
 
+## 머신러닝
+
+<details>
+  
+<summary>2024-09-13 ~ 2024-09-20</summary>
+
+</details>
+
 ## 회고록
 
   [네이버 블로그](https://blog.naver.com/ghzm888)
