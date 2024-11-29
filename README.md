@@ -148,6 +148,16 @@
 
 ## [Project03](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN05-3RD-4TEAM)
 
+<details>
+  
+<summary>2024-11-26 ~ 2024-11-27</summary>
+  
+- 2024.11.26 [Project03](./Project/03/Streamlit_Page.ipynb)
+
+- 2024.11.27 https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN05-3RD-4TEAM
+  
+</details>
+
 ## 회고록
 
   [네이버 블로그](https://blog.naver.com/ghzm888)
