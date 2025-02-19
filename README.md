@@ -181,7 +181,3 @@
 
 </details>
 
-## 회고록
-
-  [네이버 블로그](https://blog.naver.com/ghzm888)
-
